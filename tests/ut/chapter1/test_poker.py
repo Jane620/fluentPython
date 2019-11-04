@@ -10,7 +10,7 @@ def poker():
 
 
 def test_len(poker):
-    assert len(poker) == 52
+    assert len(poker) ==52
 
 
 def test_first_card(poker):
