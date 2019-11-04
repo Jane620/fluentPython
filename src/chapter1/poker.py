@@ -27,18 +27,3 @@ class Pokers:
 
     def __getitem__(self, position):
         return self._card[position]
-
-
-
-def main():
-    poke = Pokers()
-    poke[0]
-    print(poke[-1])
-
-    # test namedtuple
-    Test = collections.namedtuple('account', ['name', 'passed'])
-    test = Test('john', 'name')
-    print(test.name)
-
-if __name__ == '__main__':
-    main()
