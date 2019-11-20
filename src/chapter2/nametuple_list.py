@@ -18,7 +18,7 @@ class Location:
 
 def exec_city_info():
     """
-        function main 我是函数说明
+        定义nametuple时需要按照一串字符的形式送入, 元组的构造函数只支持一种单一的可迭代对象
     """
     loca = Location()
     City = namedtuple("City", "name country population cordinations")
