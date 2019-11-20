@@ -1,6 +1,8 @@
 # -*- coding:utf-8 -*-
 from collections import namedtuple
 
+City = namedtuple("City", "name country population cordinations")
+
 
 class Location:
     """
@@ -18,8 +20,13 @@ class Location:
 
 def exec_city_info():
     """
-        定义nametuple时需要按照一串字符的形式送入, 元组的构造函数只支持一种单一的可迭代对象
+        nametuple
     """
     loca = Location()
-    City = namedtuple("City", "name country population cordinations")
     return City(loca.name, loca.country, loca.popu, loca.cord)
+
+
+def make_city_info(info_list: list):
+
+    print(f" fileds : {City._fields}")
+    return City._make(info_list)
