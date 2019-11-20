@@ -6,7 +6,7 @@ from src.chapter2.generator_list import generator_list, file_path_output
 @pytest.mark.parametrize('sizes', ['S', 'M', 'L'])
 def test_generator(sizes):
     result = generator_list(sizes)
-    i = 0
+    i = 0  # loop test generator
     for size in result:
         assert sizes[i] == size
         i += 1
