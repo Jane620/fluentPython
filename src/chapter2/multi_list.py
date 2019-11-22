@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 
-def multi_same_list(origin_list):
+def multi_same_list(origin_list) -> list:
     """
     this object is not direct to the same address
     :param origin_list:
@@ -12,7 +12,7 @@ def multi_same_list(origin_list):
     return result
 
 
-def multi_diff_list(origin_list):
+def multi_diff_list(origin_list) -> list:
     """
     this object is not direct to the diff address
     so its good to change the index value
